@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <content="width=device-width, initial-scale="1.0">
+    <title>Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 id="title">Calculator Task</h1>
+    <p id="description">Created this calculator responsively using HTML,CSS,bootstrap and Javascript</p>
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <div class="buttons">
+            <button id="7" class="btn btn-secondary" onclick="appendNumber('7')">7</button>
+            <button id="8" class="btn btn-secondary" onclick="appendNumber('8')">8</button>
+            <button id="9" class="btn btn-secondary" onclick="appendNumber('9')">9</button>
+            <button id="clear" class="btn btn-danger" onclick="clearDisplay()">C</button>
+            
+            <button id="4" class="btn btn-secondary" onclick="appendNumber('4')">4</button>
+            <button id="5" class="btn btn-secondary" onclick="appendNumber('5')">5</button>
+            <button id="6" class="btn btn-secondary" onclick="appendNumber('6')">6</button>
+            <button id="divide" class="btn btn-warning" onclick="appendOperator('/')">/</button>
+            
+            <button id="1" class="btn btn-secondary" onclick="appendNumber('1')">1</button>
+            <button id="2" class="btn btn-secondary" onclick="appendNumber('2')">2</button>
+            <button id="3" class="btn btn-secondary" onclick="appendNumber('3')">3</button>
+            <button id="multiply" class="btn btn-warning" onclick="appendOperator('')">*</button>
+            
+            <button id="0" class="btn btn-secondary" onclick="appendNumber('0')">0</button>
+            <button id="add" class="btn btn-warning" onclick="appendOperator('+')">+</button>
+            <button id="subtract" class="btn btn-warning" onclick="appendOperator('-')">-</button>
+            <button id="equal" class="btn btn-success" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>

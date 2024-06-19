@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to left,#7fade2,#9afa74);
+}
+.calculator {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 70px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to left,#7fade2,#9afa74);
+}
+h1,p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator input{
+    width: 100%;
+    height: 50px;
+
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 24px;
+    outline:none;
+    border-radius: 20px;
+    padding-right: 1px;
+}
+.calculator button {
+    width: 23%;
+    height: 50px;
+    font-size: 20px;
+    margin: 1%;
+    border-radius: 50%;
+}
+
+/* Additional CSS for responsive design */
+@media (max-width: 576px) {
+    .calculator {
+        width: 90%;
+        padding: 10px;
+    }
+    .calculator button {
+        width: 48%;
+        margin: 1%;
+    }
+}
